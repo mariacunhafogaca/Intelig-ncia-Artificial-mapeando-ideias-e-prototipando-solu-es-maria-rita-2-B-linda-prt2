@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organização da Casa // ROTINES MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos 3D Tridimensionais Flutuantes ao Fundo -->
+  <div class="bg-3d-container" aria-hidden="true">
+    <div class="shape3d sphere-1"></div>
+    <div class="shape3d torus-1"></div>
+    <div class="shape3d cube-1"></div>
+    <div class="shape3d sphere-2"></div>
+    <div class="shape3d pyramid-1"></div>
+    <div class="shape3d torus-2"></div>
+  </div>
+
+  <!-- Overlay para profundidade -->
+  <div class="overlay-glow"></div>
+
+  <!-- Conteúdo da Página Secundária -->
+  <div class="app-container">
+
+    <!-- Barra de Navegação Superior -->
+    <nav class="top-nav" aria-label="Navegação entre rotinas">
+      <a href="index.html" class="btn-back">← Voltar ao Painel</a>
+      <div class="quick-nav">
+        <a href="estudo.html" class="">📚 Estudo</a>
+        <a href="trabalho.html" class="">💼 Trabalho</a>
+        <a href="esportes.html" class="">🏐 Esportes</a>
+        <a href="lazer.html" class="">🎬 Lazer</a>
+        <a href="hobby.html" class="">🎨 Hobby</a>
+        <a href="saude.html" class="">🍎 Saúde</a>
+        <a href="casa.html" class="active">🧹 Casa</a>
+      </div>
+    </nav>
+
+    <!-- Cabeçalho Hero da Categoria -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-icon">🧹</div>
+      <div class="subpage-hero-content">
+        <div class="badge">GUIA APROFUNDADO // ROTINES MARY</div>
+        <h1>Organização da Casa</h1>
+        <div class="subpage-schedule">⏱️ 08:30 - 09:00 (Manhã) | 11:30 - 12:00 (Preparação) | Sábados (Manutenção)</div>
+        <p>Um ambiente visualmente limpo e funcional reduz o estresse cognitivo e economiza minutos preciosos na transição entre estudo, trabalho e treino. Com micro-hábitos diários de 15 minutos, a casa permanece em ordem sem exigir faxinas exaustivas.</p>
+      </div>
+    </section>
+
+    <!-- Grade de Conteúdo Aprofundado -->
+    <section class="detail-grid">
+      <!-- Bloco 1: Cronograma Detalhado -->
+      <article class="detail-panel">
+        <h2>🗓️ Cronograma & Blocos de Execução</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Janela</th>
+              <th>Atividade Estratégica</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><span class="time-pill">08:30 – 08:50</span></td><td>Reset Matinal: Arrumar a cama, abrir janelas para ventilar e organizar a bancada</td></tr>
+              <tr><td><span class="time-pill">11:30 – 12:00</span></td><td>Logística Pré-Trabalho: Preparar almoço e deixar a bolsa de treino 100% pronta</td></tr>
+              <tr><td><span class="time-pill">20:15 – 20:30</span></td><td>Pós-Treino Imediato: Colocar roupa suada de vôlei para arejar/lavar e higienizar garrafa</td></tr>
+              <tr><td><span class="time-pill">Sábado (09:00 – 10:30)</span></td><td>Manutenção Semanal: Troca de roupas de cama, aspiração, banheiro e organização geral</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- Bloco 2: Checklist Interativo -->
+      <article class="detail-panel">
+        <h2>✅ Checklist Diário Interativo</h2>
+        <p>Clique nos itens abaixo para marcar seu progresso do dia:</p>
+        <ul class="interactive-checklist" id="checklist-casa">
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Arrumar a cama e ventilar o quarto logo ao acordar</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Deixar a bolsa de vôlei/academia conferida e pronta antes das 12:00</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Manter a pia da cozinha limpa e sem louça acumulada antes de dormir</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Separar e lavar uniformes esportivos regularmente para não faltar peça limpa</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Executar a manutenção semanal da casa no sábado pela manhã</span></li>
+        </ul>
+      </article>
+
+      <!-- Bloco 3: Metodologia Aprofundada -->
+      <article class="detail-panel full-width">
+        <h2>🧠 Sistema de Micro-Hábitos & Logística Esportiva</h2>
+        <p><strong>Regra dos 2 Minutos:</strong> Se uma tarefa doméstica leva menos de dois minutos (guardar um copo, dobrar uma manta, pendurar a mochila), faça imediatamente em vez de acumular.</p>
+          <p><strong>Estação de Treino (Vôlei & Academia):</strong> Crie um cantinho fixo no quarto ou próximo à entrada apenas para seus itens esportivos: tênis de quadra, joelheira, meias, garrafa, desodorante e roupas de treino lavadas.</p>
+          <p><strong>Manutenção Semanal em Bloco Único:</strong> Ao manter a ordem básica durante a semana em blocos de 15 minutos, o sábado de manhã resolve toda a limpeza mais pesada em cerca de 90 minutos.</p>
+
+        <h3>Pilares Fundamentais</h3>
+        <div class="pillars-grid">
+          <div class="pillar-box"><strong>Ordem Visual</strong><span>Ambiente organizado aumenta o foco imediato nas sessões matinais de estudo.</span></div>
+          <div class="pillar-box"><strong>Bolsa Pronta às 12h</strong><span>Arrumar o kit do vôlei antes do almoço elimina qualquer correria às 18h00.</span></div>
+          <div class="pillar-box"><strong>Regra do Lugar Fixo</strong><span>Chaves, fones, garrafa e acessórios esportivos sempre no mesmo local.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Dica de Ouro -->
+    <div class="tip-banner">
+      💡 <strong>Dica de Ouro:</strong> Faça um checklist mental fixo da bolsa do vôlei (tênis, joelheira, garrafa de água, elástico de cabelo e roupa extra) sempre antes do almoço. Nunca deixe para arrumar às 18h!
+    </div>
+
+    <!-- Navegação Inferior Anterior / Próximo -->
+    <div class="page-footer-nav">
+      <a href="saude.html" class="btn-nav-page">← Saúde & Bem-Estar</a>
+      <a href="index.html" class="btn-nav-page">🏠 Início</a>
+      <a href="estudo.html" class="btn-nav-page">Estudo & Foco →</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Persistência simples no navegador para o checklist interativo
+    const pageKey = 'rotines_mary_check_casa';
+    const listEl = document.getElementById('checklist-casa');
+
+    function loadChecks() {
+      const saved = JSON.parse(localStorage.getItem(pageKey) || '[]');
+      const items = listEl.querySelectorAll('li');
+      items.forEach((li, idx) => {
+        if (saved.includes(idx)) {
+          li.classList.add('checked');
+        }
+      });
+    }
+
+    function toggleCheck(li) {
+      li.classList.toggle('checked');
+      const items = Array.from(listEl.querySelectorAll('li'));
+      const checkedIndices = items
+        .map((el, idx) => el.classList.contains('checked') ? idx : -1)
+        .filter(idx => idx !== -1);
+      localStorage.setItem(pageKey, JSON.stringify(checkedIndices));
+    }
+
+    loadChecks();
+  </script>
+
+</body>
+</html>

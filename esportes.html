@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vôlei & Academia // ROTINES MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos 3D Tridimensionais Flutuantes ao Fundo -->
+  <div class="bg-3d-container" aria-hidden="true">
+    <div class="shape3d sphere-1"></div>
+    <div class="shape3d torus-1"></div>
+    <div class="shape3d cube-1"></div>
+    <div class="shape3d sphere-2"></div>
+    <div class="shape3d pyramid-1"></div>
+    <div class="shape3d torus-2"></div>
+  </div>
+
+  <!-- Overlay para profundidade -->
+  <div class="overlay-glow"></div>
+
+  <!-- Conteúdo da Página Secundária -->
+  <div class="app-container">
+
+    <!-- Barra de Navegação Superior -->
+    <nav class="top-nav" aria-label="Navegação entre rotinas">
+      <a href="index.html" class="btn-back">← Voltar ao Painel</a>
+      <div class="quick-nav">
+        <a href="estudo.html" class="">📚 Estudo</a>
+        <a href="trabalho.html" class="">💼 Trabalho</a>
+        <a href="esportes.html" class="active">🏐 Esportes</a>
+        <a href="lazer.html" class="">🎬 Lazer</a>
+        <a href="hobby.html" class="">🎨 Hobby</a>
+        <a href="saude.html" class="">🍎 Saúde</a>
+        <a href="casa.html" class="">🧹 Casa</a>
+      </div>
+    </nav>
+
+    <!-- Cabeçalho Hero da Categoria -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-icon">🏐</div>
+      <div class="subpage-hero-content">
+        <div class="badge">GUIA APROFUNDADO // ROTINES MARY</div>
+        <h1>Vôlei & Academia</h1>
+        <div class="subpage-schedule">⏱️ Vôlei: Seg, Ter e Qui (18:20 - 20:00) | Academia: Qua, Sex e Sáb</div>
+        <p>O pilar físico combina a intensidade técnica e aeróbica do voleibol três vezes na semana com o treinamento de força na academia em dias alternados, criando um ciclo completo de potência, agilidade e blindagem articular.</p>
+      </div>
+    </section>
+
+    <!-- Grade de Conteúdo Aprofundado -->
+    <section class="detail-grid">
+      <!-- Bloco 1: Cronograma Detalhado -->
+      <article class="detail-panel">
+        <h2>🗓️ Cronograma & Blocos de Execução</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Janela</th>
+              <th>Atividade Estratégica</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><span class="time-pill">Segunda-feira</span></td><td>18:20 – 20:00 | Treino de Vôlei (Fundamentos, ritmo de jogo e intensidade)</td></tr>
+              <tr><td><span class="time-pill">Terça-feira</span></td><td>18:20 – 20:00 | Treino de Vôlei (Tática, deslocamento e resistência)</td></tr>
+              <tr><td><span class="time-pill">Quarta-feira</span></td><td>Horário Livre / Manhã | Academia: Membros Inferiores + Core (Força e salto)</td></tr>
+              <tr><td><span class="time-pill">Quinta-feira</span></td><td>18:20 – 20:00 | Treino de Vôlei (Coletivo, potência e tomada de decisão)</td></tr>
+              <tr><td><span class="time-pill">Sexta-feira</span></td><td>Horário Livre / Manhã | Academia: Membros Superiores + Estabilidade de Ombro</td></tr>
+              <tr><td><span class="time-pill">Sábado</span></td><td>Manhã | Academia: Full Body / Mobilidade Articular e Prevenção</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- Bloco 2: Checklist Interativo -->
+      <article class="detail-panel">
+        <h2>✅ Checklist Diário Interativo</h2>
+        <p>Clique nos itens abaixo para marcar seu progresso do dia:</p>
+        <ul class="interactive-checklist" id="checklist-esportes">
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Realizar 10 minutos de mobilidade articular antes de entrar em quadra às 18:20</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Levar garrafa de 1L de água + toalha e joelheira nos dias de vôlei (Seg/Ter/Qui)</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Executar treino de força na academia na Quarta, Sexta e Sábado</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Incluir exercícios de manguito rotador e core em todos os treinos de academia</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Monitorar dores articulares e ajustar carga sempre que necessário</span></li>
+        </ul>
+      </article>
+
+      <!-- Bloco 3: Metodologia Aprofundada -->
+      <article class="detail-panel full-width">
+        <h2>🧠 Sinergia Entre Quadra e Musculação</h2>
+        <p><strong>Por que alternar Vôlei e Academia?</strong> Treinar musculação pesada no mesmo dia do vôlei compromete a velocidade de reação e sobrecarrega tendões patelares e manguito rotador. Ao posicionar a academia na Quarta, Sexta e Sábado, você maximiza o rendimento em quadra.</p>
+          <p><strong>Foco Específico na Academia:</strong> Priorize exercícios unilaterais (afundo, búlgaro), fortalecimento de panturrilhas e tibiais (absorção de impacto nos saltos), estabilização de manguito rotador (saque e ataque) e core anti-rotacional.</p>
+          <p><strong>Protocolo Pré e Pós-Quadra:</strong> Chegue 10 minutos antes das 18h20 para mobilidade de tornozelos, quadril e ombros. Após as 20h00, priorize hidratação e recuperação muscular.</p>
+
+        <h3>Pilares Fundamentais</h3>
+        <div class="pillars-grid">
+          <div class="pillar-box"><strong>Blindagem Articular</strong><span>Fortalecimento focado em joelhos, tornozelos e ombros reduz drasticamente o risco de lesões.</span></div>
+          <div class="pillar-box"><strong>Explosão & Salto</strong><span>Treino de força na quarta e sábado transfere potência direta para bloqueio e ataque.</span></div>
+          <div class="pillar-box"><strong>Recuperação Ativa</strong><span>Domingo é reservado para descanso completo ou caminhada leve e alongamento.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Dica de Ouro -->
+    <div class="tip-banner">
+      💡 <strong>Dica de Ouro:</strong> Como Segunda e Terça são dias seguidos de vôlei (18h20 às 20h), capriche na ingestão de carboidratos e hidratação na noite de segunda-feira para não sentir queda de rendimento na terça!
+    </div>
+
+    <!-- Navegação Inferior Anterior / Próximo -->
+    <div class="page-footer-nav">
+      <a href="trabalho.html" class="btn-nav-page">← Trabalho & Carreira</a>
+      <a href="index.html" class="btn-nav-page">🏠 Início</a>
+      <a href="lazer.html" class="btn-nav-page">Lazer & Desconexão →</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Persistência simples no navegador para o checklist interativo
+    const pageKey = 'rotines_mary_check_esportes';
+    const listEl = document.getElementById('checklist-esportes');
+
+    function loadChecks() {
+      const saved = JSON.parse(localStorage.getItem(pageKey) || '[]');
+      const items = listEl.querySelectorAll('li');
+      items.forEach((li, idx) => {
+        if (saved.includes(idx)) {
+          li.classList.add('checked');
+        }
+      });
+    }
+
+    function toggleCheck(li) {
+      li.classList.toggle('checked');
+      const items = Array.from(listEl.querySelectorAll('li'));
+      const checkedIndices = items
+        .map((el, idx) => el.classList.contains('checked') ? idx : -1)
+        .filter(idx => idx !== -1);
+      localStorage.setItem(pageKey, JSON.stringify(checkedIndices));
+    }
+
+    loadChecks();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde & Bem-Estar // ROTINES MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos 3D Tridimensionais Flutuantes ao Fundo -->
+  <div class="bg-3d-container" aria-hidden="true">
+    <div class="shape3d sphere-1"></div>
+    <div class="shape3d torus-1"></div>
+    <div class="shape3d cube-1"></div>
+    <div class="shape3d sphere-2"></div>
+    <div class="shape3d pyramid-1"></div>
+    <div class="shape3d torus-2"></div>
+  </div>
+
+  <!-- Overlay para profundidade -->
+  <div class="overlay-glow"></div>
+
+  <!-- Conteúdo da Página Secundária -->
+  <div class="app-container">
+
+    <!-- Barra de Navegação Superior -->
+    <nav class="top-nav" aria-label="Navegação entre rotinas">
+      <a href="index.html" class="btn-back">← Voltar ao Painel</a>
+      <div class="quick-nav">
+        <a href="estudo.html" class="">📚 Estudo</a>
+        <a href="trabalho.html" class="">💼 Trabalho</a>
+        <a href="esportes.html" class="">🏐 Esportes</a>
+        <a href="lazer.html" class="">🎬 Lazer</a>
+        <a href="hobby.html" class="">🎨 Hobby</a>
+        <a href="saude.html" class="active">🍎 Saúde</a>
+        <a href="casa.html" class="">🧹 Casa</a>
+      </div>
+    </nav>
+
+    <!-- Cabeçalho Hero da Categoria -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-icon">🍎</div>
+      <div class="subpage-hero-content">
+        <div class="badge">GUIA APROFUNDADO // ROTINES MARY</div>
+        <h1>Saúde & Bem-Estar</h1>
+        <div class="subpage-schedule">⏱️ Monitoramento Diário Contínuo (Hidratação, Nutrição & Sono)</div>
+        <p>Com uma rotina que inclui treinos de vôlei até as 20h e sessões de academia, seu corpo funciona como o de uma atleta amadora. Nutrição estratégica, hidratação fracionada e sono reparador são a base que sustenta todo o restante.</p>
+      </div>
+    </section>
+
+    <!-- Grade de Conteúdo Aprofundado -->
+    <section class="detail-grid">
+      <!-- Bloco 1: Cronograma Detalhado -->
+      <article class="detail-panel">
+        <h2>🗓️ Cronograma & Blocos de Execução</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Janela</th>
+              <th>Atividade Estratégica</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><span class="time-pill">08:00 – 08:30</span></td><td>Café da Manhã Completo: Proteínas, fibras e 500ml de água ao acordar</td></tr>
+              <tr><td><span class="time-pill">12:00 – 12:45</span></td><td>Almoço Equilibrado: Carboidratos complexos, proteína magra e vegetais variados</td></tr>
+              <tr><td><span class="time-pill">16:30 – 17:00</span></td><td>Lanche Pré-Treino (Dias de Vôlei): Carboidrato de fácil digestão para energia às 18h20</td></tr>
+              <tr><td><span class="time-pill">20:15 – 21:00</span></td><td>Jantar Pós-Treino: Proteína para síntese muscular + carboidrato para repor glicogênio</td></tr>
+              <tr><td><span class="time-pill">22:30 – 23:00</span></td><td>Ritual do Sono: Ambiente escuro, fresco e meta de 7h30 a 8h de sono reparador</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- Bloco 2: Checklist Interativo -->
+      <article class="detail-panel">
+        <h2>✅ Checklist Diário Interativo</h2>
+        <p>Clique nos itens abaixo para marcar seu progresso do dia:</p>
+        <ul class="interactive-checklist" id="checklist-saude">
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Beber 500ml de água logo nos primeiros 30 minutos após acordar</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Atingir a meta diária de 3L a 4L de água (especialmente Seg, Ter e Qui)</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Fazer lanche pré-treino às 16:30 antes de sair para o vôlei</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Garantir refeição rica em proteínas após o treino das 20:00</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Manter horário regular para dormir e acordar, inclusive nos fins de semana</span></li>
+        </ul>
+      </article>
+
+      <!-- Bloco 3: Metodologia Aprofundada -->
+      <article class="detail-panel full-width">
+        <h2>🧠 Protocolo Nutricional & Recuperação Física</h2>
+        <p><strong>Hidratação Fracionada (3L a 4L/dia):</strong> Não espere sentir sede. Beba 1L pela manhã, 1,5L durante a tarde no trabalho e 1L a 1,5L entre o treino das 18h20 e a noite. Nos dias de vôlei intenso, considere repor eletrólitos.</p>
+          <p><strong>Janela Pré e Pós-Vôlei:</strong> Como o treino começa às 18h20, fazer um lanche estratégico às 16h30 (ex: fruta com aveia, pão integral ou iogurte) evita queda de glicemia no meio do treino sem causar desconforto gástrico.</p>
+          <p><strong>Arquitetura do Sono:</strong> É durante o sono profundo que ocorre a liberação de hormônio do crescimento (GH) e o reparo das microlesões musculares da academia e do vôlei.</p>
+
+        <h3>Pilares Fundamentais</h3>
+        <div class="pillars-grid">
+          <div class="pillar-box"><strong>Meta Hídrica: 3L–4L</strong><span>Essencial para lubrificação articular, termorregulação e prevenção de câimbras.</span></div>
+          <div class="pillar-box"><strong>Proteína Fracionada</strong><span>Distribuir proteínas em todas as 4 refeições otimiza a recuperação muscular.</span></div>
+          <div class="pillar-box"><strong>Sono de 7h30 a 8h</strong><span>Dormir bem melhora reflexos em quadra, foco nos estudos e regulação hormonal.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Dica de Ouro -->
+    <div class="tip-banner">
+      💡 <strong>Dica de Ouro:</strong> Tenha sempre uma garrafa térmica de 1 litro na mesa de trabalho. Completar duas garrafas entre 13h e 18h garante que você chegue perfeitamente hidratada ao treino de vôlei às 18h20.
+    </div>
+
+    <!-- Navegação Inferior Anterior / Próximo -->
+    <div class="page-footer-nav">
+      <a href="hobby.html" class="btn-nav-page">← Hobby & Criatividade</a>
+      <a href="index.html" class="btn-nav-page">🏠 Início</a>
+      <a href="casa.html" class="btn-nav-page">Organização da Casa →</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Persistência simples no navegador para o checklist interativo
+    const pageKey = 'rotines_mary_check_saude';
+    const listEl = document.getElementById('checklist-saude');
+
+    function loadChecks() {
+      const saved = JSON.parse(localStorage.getItem(pageKey) || '[]');
+      const items = listEl.querySelectorAll('li');
+      items.forEach((li, idx) => {
+        if (saved.includes(idx)) {
+          li.classList.add('checked');
+        }
+      });
+    }
+
+    function toggleCheck(li) {
+      li.classList.toggle('checked');
+      const items = Array.from(listEl.querySelectorAll('li'));
+      const checkedIndices = items
+        .map((el, idx) => el.classList.contains('checked') ? idx : -1)
+        .filter(idx => idx !== -1);
+      localStorage.setItem(pageKey, JSON.stringify(checkedIndices));
+    }
+
+    loadChecks();
+  </script>
+
+</body>
+</html>

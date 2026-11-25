@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby & Criatividade // ROTINES MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos 3D Tridimensionais Flutuantes ao Fundo -->
+  <div class="bg-3d-container" aria-hidden="true">
+    <div class="shape3d sphere-1"></div>
+    <div class="shape3d torus-1"></div>
+    <div class="shape3d cube-1"></div>
+    <div class="shape3d sphere-2"></div>
+    <div class="shape3d pyramid-1"></div>
+    <div class="shape3d torus-2"></div>
+  </div>
+
+  <!-- Overlay para profundidade -->
+  <div class="overlay-glow"></div>
+
+  <!-- Conteúdo da Página Secundária -->
+  <div class="app-container">
+
+    <!-- Barra de Navegação Superior -->
+    <nav class="top-nav" aria-label="Navegação entre rotinas">
+      <a href="index.html" class="btn-back">← Voltar ao Painel</a>
+      <div class="quick-nav">
+        <a href="estudo.html" class="">📚 Estudo</a>
+        <a href="trabalho.html" class="">💼 Trabalho</a>
+        <a href="esportes.html" class="">🏐 Esportes</a>
+        <a href="lazer.html" class="">🎬 Lazer</a>
+        <a href="hobby.html" class="active">🎨 Hobby</a>
+        <a href="saude.html" class="">🍎 Saúde</a>
+        <a href="casa.html" class="">🧹 Casa</a>
+      </div>
+    </nav>
+
+    <!-- Cabeçalho Hero da Categoria -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-icon">🎨</div>
+      <div class="subpage-hero-content">
+        <div class="badge">GUIA APROFUNDADO // ROTINES MARY</div>
+        <h1>Hobby & Criatividade</h1>
+        <div class="subpage-schedule">⏱️ Sábados à Tarde | Domingos | Intervalos Criativos</div>
+        <p>Enquanto o trabalho exige entrega e o esporte exige performance, o hobby existe exclusivamente pelo prazer do processo. É o território livre onde você experimenta, cria e se expressa sem cobranças ou métricas.</p>
+      </div>
+    </section>
+
+    <!-- Grade de Conteúdo Aprofundado -->
+    <section class="detail-grid">
+      <!-- Bloco 1: Cronograma Detalhado -->
+      <article class="detail-panel">
+        <h2>🗓️ Cronograma & Blocos de Execução</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Janela</th>
+              <th>Atividade Estratégica</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><span class="time-pill">Sábado (14:00 – 16:30)</span></td><td>Bloco Criativo Principal: Dedicação a projetos manuais, artísticos ou musicais</td></tr>
+              <tr><td><span class="time-pill">Domingo (10:00 – 11:30)</span></td><td>Exploração Livre: Leitura por prazer, jogos, fotografia ou aprendizado lúdico</td></tr>
+              <tr><td><span class="time-pill">Dias Úteis (20 min)</span></td><td>Micro-Pausa Criativa: Ouvir música, desenhar, cozinhar algo diferente ou escrever</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- Bloco 2: Checklist Interativo -->
+      <article class="detail-panel">
+        <h2>✅ Checklist Diário Interativo</h2>
+        <p>Clique nos itens abaixo para marcar seu progresso do dia:</p>
+        <ul class="interactive-checklist" id="checklist-hobby">
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Separar pelo menos 2 horas no fim de semana dedicadas exclusivamente a um hobby</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Manter os materiais criativos organizados e de fácil acesso</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Experimentar uma atividade ou projeto novo a cada mês</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Praticar sem celular por perto para aproveitar a imersão total</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Não transformar o hobby em lista de tarefas ou obrigação</span></li>
+        </ul>
+      </article>
+
+      <!-- Bloco 3: Metodologia Aprofundada -->
+      <article class="detail-panel full-width">
+        <h2>🧠 A Importância da Expressão Sem Métricas</h2>
+        <p><strong>Antídoto Contra o Perfeccionismo:</strong> Pessoas disciplinadas tendem a transformar tudo em obrigação. No hobby, o objetivo não é ser a melhor nem monetizar — é aproveitar o estado de imersão e curiosidade.</p>
+          <p><strong>Estímulo Neuroplástico:</strong> Aprender uma música nova, pintar, cozinhar uma receita elaborada ou montar algo manual ativa áreas do cérebro diferentes das usadas no trabalho e no estudo técnico.</p>
+          <p><strong>Kit Criativo Sempre Acessível:</strong> Deixe os materiais do seu hobby organizados e visíveis para que começar leve menos de 30 segundos.</p>
+
+        <h3>Pilares Fundamentais</h3>
+        <div class="pillars-grid">
+          <div class="pillar-box"><strong>Processo > Resultado</strong><span>O valor está no prazer de fazer, mesmo que o resultado não fique perfeito.</span></div>
+          <div class="pillar-box"><strong>Curiosidade Livre</strong><span>Permita-se testar novas atividades manuais, culturais ou artísticas sem pressão.</span></div>
+          <div class="pillar-box"><strong>Estado de Fluxo</strong><span>Atividades manuais e criativas silenciam a ansiedade e renovam a energia emocional.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Dica de Ouro -->
+    <div class="tip-banner">
+      💡 <strong>Dica de Ouro:</strong> Se você estiver sem ideias no fim de semana, escolha uma atividade manual (desenho, culinária criativa, artesanato, música ou jardinagem) que tire sua atenção das telas.
+    </div>
+
+    <!-- Navegação Inferior Anterior / Próximo -->
+    <div class="page-footer-nav">
+      <a href="lazer.html" class="btn-nav-page">← Lazer & Desconexão</a>
+      <a href="index.html" class="btn-nav-page">🏠 Início</a>
+      <a href="saude.html" class="btn-nav-page">Saúde & Bem-Estar →</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Persistência simples no navegador para o checklist interativo
+    const pageKey = 'rotines_mary_check_hobby';
+    const listEl = document.getElementById('checklist-hobby');
+
+    function loadChecks() {
+      const saved = JSON.parse(localStorage.getItem(pageKey) || '[]');
+      const items = listEl.querySelectorAll('li');
+      items.forEach((li, idx) => {
+        if (saved.includes(idx)) {
+          li.classList.add('checked');
+        }
+      });
+    }
+
+    function toggleCheck(li) {
+      li.classList.toggle('checked');
+      const items = Array.from(listEl.querySelectorAll('li'));
+      const checkedIndices = items
+        .map((el, idx) => el.classList.contains('checked') ? idx : -1)
+        .filter(idx => idx !== -1);
+      localStorage.setItem(pageKey, JSON.stringify(checkedIndices));
+    }
+
+    loadChecks();
+  </script>
+
+</body>
+</html>

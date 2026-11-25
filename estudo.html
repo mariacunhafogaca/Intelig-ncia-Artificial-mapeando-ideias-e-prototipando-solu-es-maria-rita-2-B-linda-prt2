@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudo & Foco // ROTINES MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos 3D Tridimensionais Flutuantes ao Fundo -->
+  <div class="bg-3d-container" aria-hidden="true">
+    <div class="shape3d sphere-1"></div>
+    <div class="shape3d torus-1"></div>
+    <div class="shape3d cube-1"></div>
+    <div class="shape3d sphere-2"></div>
+    <div class="shape3d pyramid-1"></div>
+    <div class="shape3d torus-2"></div>
+  </div>
+
+  <!-- Overlay para profundidade -->
+  <div class="overlay-glow"></div>
+
+  <!-- Conteúdo da Página Secundária -->
+  <div class="app-container">
+
+    <!-- Barra de Navegação Superior -->
+    <nav class="top-nav" aria-label="Navegação entre rotinas">
+      <a href="index.html" class="btn-back">← Voltar ao Painel</a>
+      <div class="quick-nav">
+        <a href="estudo.html" class="active">📚 Estudo</a>
+        <a href="trabalho.html" class="">💼 Trabalho</a>
+        <a href="esportes.html" class="">🏐 Esportes</a>
+        <a href="lazer.html" class="">🎬 Lazer</a>
+        <a href="hobby.html" class="">🎨 Hobby</a>
+        <a href="saude.html" class="">🍎 Saúde</a>
+        <a href="casa.html" class="">🧹 Casa</a>
+      </div>
+    </nav>
+
+    <!-- Cabeçalho Hero da Categoria -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-icon">📚</div>
+      <div class="subpage-hero-content">
+        <div class="badge">GUIA APROFUNDADO // ROTINES MARY</div>
+        <h1>Estudo & Foco</h1>
+        <div class="subpage-schedule">⏱️ 09:00 - 11:30 (Manhã) | 20:30 - 21:15 (Revisão Leve Pós-Treino)</div>
+        <p>O período da manhã representa o pico de clareza cognitiva antes das demandas profissionais e físicas. Aqui estruturamos blocos de aprendizado profundo (Deep Work), retenção ativa e evolução contínua sem sobrecarga mental.</p>
+      </div>
+    </section>
+
+    <!-- Grade de Conteúdo Aprofundado -->
+    <section class="detail-grid">
+      <!-- Bloco 1: Cronograma Detalhado -->
+      <article class="detail-panel">
+        <h2>🗓️ Cronograma & Blocos de Execução</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Janela</th>
+              <th>Atividade Estratégica</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><span class="time-pill">09:00 – 09:50</span></td><td>Bloco 1: Estudo Profundo (Conteúdo Novo / Teoria Complexa)</td></tr>
+              <tr><td><span class="time-pill">09:50 – 10:00</span></td><td>Pausa Estratégica (Hidratação, alongamento ocular, sem redes sociais)</td></tr>
+              <tr><td><span class="time-pill">10:00 – 10:50</span></td><td>Bloco 2: Prática Ativa (Exercícios, resumos autorais ou projetos)</td></tr>
+              <tr><td><span class="time-pill">10:50 – 11:30</span></td><td>Bloco 3: Leitura Técnica ou Idiomas + Revisão Espaçada</td></tr>
+              <tr><td><span class="time-pill">20:30 – 21:15</span></td><td>Revisão Noturna Leve (Apenas nos dias sem treino de vôlei)</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- Bloco 2: Checklist Interativo -->
+      <article class="detail-panel">
+        <h2>✅ Checklist Diário Interativo</h2>
+        <p>Clique nos itens abaixo para marcar seu progresso do dia:</p>
+        <ul class="interactive-checklist" id="checklist-estudo">
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Deixar mesa organizada e materiais separados na noite anterior</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Completar 2 blocos de 50 minutos de foco total antes das 11:00</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Registrar 3 aprendizados-chave no caderno ou aplicativo de notas</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Evitar notificações e redes sociais durante toda a janela matinal</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Revisar o cronograma de estudos da semana todo domingo à noite</span></li>
+        </ul>
+      </article>
+
+      <!-- Bloco 3: Metodologia Aprofundada -->
+      <article class="detail-panel full-width">
+        <h2>🧠 Metodologia de Aprendizado Aplicada</h2>
+        <p><strong>1. Técnica Pomodoro Estendida (50/10):</strong> Em vez de ciclos curtos de 25 minutos que quebram o raciocínio complexo, ciclos de 50 minutos permitem atingir o estado de fluxo (flow) enquanto os 10 minutos de intervalo evitam a fadiga mental.</p>
+          <p><strong>2. Aprendizado Ativo (Active Recall):</strong> Ao final de cada sessão, feche o material e escreva em 5 tópicos o que você realmente absorveu. Explicar o conceito com suas próprias palavras aumenta em até 70% a retenção de longo prazo.</p>
+          <p><strong>3. Ambiente Blindado:</strong> Celular em modo 'Não Perturbe' fora do alcance visual e apenas as abas estritamente necessárias abertas no navegador.</p>
+
+        <h3>Pilares Fundamentais</h3>
+        <div class="pillars-grid">
+          <div class="pillar-box"><strong>Prioridade Matinal</strong><span>Temas difíceis ficam entre 09h e 11h, quando a energia mental está no máximo.</span></div>
+          <div class="pillar-box"><strong>Revisão Espaçada</strong><span>Rever anotações em 24h, 7 dias e 30 dias consolida a memória sem precisar reler tudo.</span></div>
+          <div class="pillar-box"><strong>Micro-Metas Diárias</strong><span>Definir na noite anterior exatamente qual capítulo ou aula será concluída no dia seguinte.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Dica de Ouro -->
+    <div class="tip-banner">
+      💡 <strong>Dica de Ouro:</strong> Nos dias de treino intenso de vôlei (Segunda, Terça e Quinta), evite forçar estudos pesados após as 20h. Priorize o estudo pela manhã para que a noite seja dedicada à recuperação física e ao sono.
+    </div>
+
+    <!-- Navegação Inferior Anterior / Próximo -->
+    <div class="page-footer-nav">
+      <a href="casa.html" class="btn-nav-page">← Organização da Casa</a>
+      <a href="index.html" class="btn-nav-page">🏠 Início</a>
+      <a href="trabalho.html" class="btn-nav-page">Trabalho & Carreira →</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Persistência simples no navegador para o checklist interativo
+    const pageKey = 'rotines_mary_check_estudo';
+    const listEl = document.getElementById('checklist-estudo');
+
+    function loadChecks() {
+      const saved = JSON.parse(localStorage.getItem(pageKey) || '[]');
+      const items = listEl.querySelectorAll('li');
+      items.forEach((li, idx) => {
+        if (saved.includes(idx)) {
+          li.classList.add('checked');
+        }
+      });
+    }
+
+    function toggleCheck(li) {
+      li.classList.toggle('checked');
+      const items = Array.from(listEl.querySelectorAll('li'));
+      const checkedIndices = items
+        .map((el, idx) => el.classList.contains('checked') ? idx : -1)
+        .filter(idx => idx !== -1);
+      localStorage.setItem(pageKey, JSON.stringify(checkedIndices));
+    }
+
+    loadChecks();
+  </script>
+
+</body>
+</html>

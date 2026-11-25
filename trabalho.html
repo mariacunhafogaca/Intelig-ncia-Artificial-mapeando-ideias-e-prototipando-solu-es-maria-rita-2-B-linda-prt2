@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho & Carreira // ROTINES MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos 3D Tridimensionais Flutuantes ao Fundo -->
+  <div class="bg-3d-container" aria-hidden="true">
+    <div class="shape3d sphere-1"></div>
+    <div class="shape3d torus-1"></div>
+    <div class="shape3d cube-1"></div>
+    <div class="shape3d sphere-2"></div>
+    <div class="shape3d pyramid-1"></div>
+    <div class="shape3d torus-2"></div>
+  </div>
+
+  <!-- Overlay para profundidade -->
+  <div class="overlay-glow"></div>
+
+  <!-- Conteúdo da Página Secundária -->
+  <div class="app-container">
+
+    <!-- Barra de Navegação Superior -->
+    <nav class="top-nav" aria-label="Navegação entre rotinas">
+      <a href="index.html" class="btn-back">← Voltar ao Painel</a>
+      <div class="quick-nav">
+        <a href="estudo.html" class="">📚 Estudo</a>
+        <a href="trabalho.html" class="active">💼 Trabalho</a>
+        <a href="esportes.html" class="">🏐 Esportes</a>
+        <a href="lazer.html" class="">🎬 Lazer</a>
+        <a href="hobby.html" class="">🎨 Hobby</a>
+        <a href="saude.html" class="">🍎 Saúde</a>
+        <a href="casa.html" class="">🧹 Casa</a>
+      </div>
+    </nav>
+
+    <!-- Cabeçalho Hero da Categoria -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-icon">💼</div>
+      <div class="subpage-hero-content">
+        <div class="badge">GUIA APROFUNDADO // ROTINES MARY</div>
+        <h1>Trabalho & Carreira</h1>
+        <div class="subpage-schedule">⏱️ 13:00 - 18:00 (Segunda a Sexta)</div>
+        <p>Com uma janela definida de 5 horas diárias no período da tarde, a chave da alta performance profissional é a priorização implacável: resolver as entregas de maior impacto nas primeiras horas e encerrar pontualmente às 18h para cumprir a rotina esportiva.</p>
+      </div>
+    </section>
+
+    <!-- Grade de Conteúdo Aprofundado -->
+    <section class="detail-grid">
+      <!-- Bloco 1: Cronograma Detalhado -->
+      <article class="detail-panel">
+        <h2>🗓️ Cronograma & Blocos de Execução</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Janela</th>
+              <th>Atividade Estratégica</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td><span class="time-pill">13:00 – 13:15</span></td><td>Triagem Rápida: Revisar prioridades do dia e definir as 3 entregas essenciais</td></tr>
+              <tr><td><span class="time-pill">13:15 – 15:30</span></td><td>Sprint Principal: Execução de tarefas críticas e projetos de alta concentração</td></tr>
+              <tr><td><span class="time-pill">15:30 – 15:45</span></td><td>Pausa Ativa: Lanche pré-treino leve, café/água e alongamento postural</td></tr>
+              <tr><td><span class="time-pill">15:45 – 17:30</span></td><td>Bloco Operacional: Reuniões, respostas de e-mails, alinhamentos e revisões</td></tr>
+              <tr><td><span class="time-pill">17:30 – 18:00</span></td><td>Fechamento Diário: Documentar progresso, organizar pendências e preparar o dia seguinte</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <!-- Bloco 2: Checklist Interativo -->
+      <article class="detail-panel">
+        <h2>✅ Checklist Diário Interativo</h2>
+        <p>Clique nos itens abaixo para marcar seu progresso do dia:</p>
+        <ul class="interactive-checklist" id="checklist-trabalho">
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Definir as 3 entregas prioritárias logo às 13:00</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Manter notificações não urgentes silenciadas durante o Sprint Principal</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Fazer o lanche pré-treino por volta das 16:30 para ter energia às 18:20</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Atualizar status de tarefas e fechar abas de trabalho às 17:50</span></li>
+          <li onclick="toggleCheck(this)"><span class="check-box">✓</span><span class="check-text">Sair pontualmente às 18:00 com a bolsa de treino já pronta</span></li>
+        </ul>
+      </article>
+
+      <!-- Bloco 3: Metodologia Aprofundada -->
+      <article class="detail-panel full-width">
+        <h2>🧠 Gestão de Tempo & Transição Pós-Expediente</h2>
+        <p><strong>Regra das 3 Prioridades (MITs - Most Important Tasks):</strong> Antes de abrir e-mails ou mensagens instantâneas às 13h, identifique as três tarefas que, se concluídas, farão o dia valer a pena. Ataque a mais difícil primeiro.</p>
+          <p><strong>Comunicação em Lotes (Batching):</strong> Evite checar mensagens a cada 5 minutos. Reserve janelas específicas (ex: 13h05, 15h45 e 17h30) para responder demandas administrativas sem fragmentar sua atenção.</p>
+          <p><strong>Ritual de Desligamento às 18:00:</strong> Como o treino de vôlei começa às 18h20 às segundas, terças e quintas, encerrar o expediente pontualmente às 18h00 não é opcional — é uma regra inegociável de disciplina.</p>
+
+        <h3>Pilares Fundamentais</h3>
+        <div class="pillars-grid">
+          <div class="pillar-box"><strong>Foco em Resultados</strong><span>Cinco horas bem geridas superam oito horas dispersas com interrupções constantes.</span></div>
+          <div class="pillar-box"><strong>Pontualidade de Saída</strong><span>Encerrar às 17h55 garante deslocamento tranquilo para o treino das 18h20.</span></div>
+          <div class="pillar-box"><strong>Clareza de Escopo</strong><span>Registrar pendências por escrito evita levar preocupações de trabalho para a quadra.</span></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Dica de Ouro -->
+    <div class="tip-banner">
+      💡 <strong>Dica de Ouro:</strong> Deixe a mochila do vôlei ou da academia ao lado da porta antes de iniciar o expediente às 13h. Assim, às 18h00 você faz a transição trabalho → esporte em menos de 2 minutos.
+    </div>
+
+    <!-- Navegação Inferior Anterior / Próximo -->
+    <div class="page-footer-nav">
+      <a href="estudo.html" class="btn-nav-page">← Estudo & Foco</a>
+      <a href="index.html" class="btn-nav-page">🏠 Início</a>
+      <a href="esportes.html" class="btn-nav-page">Vôlei & Academia →</a>
+    </div>
+
+  </div>
+
+  <script>
+    // Persistência simples no navegador para o checklist interativo
+    const pageKey = 'rotines_mary_check_trabalho';
+    const listEl = document.getElementById('checklist-trabalho');
+
+    function loadChecks() {
+      const saved = JSON.parse(localStorage.getItem(pageKey) || '[]');
+      const items = listEl.querySelectorAll('li');
+      items.forEach((li, idx) => {
+        if (saved.includes(idx)) {
+          li.classList.add('checked');
+        }
+      });
+    }
+
+    function toggleCheck(li) {
+      li.classList.toggle('checked');
+      const items = Array.from(listEl.querySelectorAll('li'));
+      const checkedIndices = items
+        .map((el, idx) => el.classList.contains('checked') ? idx : -1)
+        .filter(idx => idx !== -1);
+      localStorage.setItem(pageKey, JSON.stringify(checkedIndices));
+    }
+
+    loadChecks();
+  </script>
+
+</body>
+</html>
